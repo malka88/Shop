@@ -1,0 +1,260 @@
+.product {
+    height: 602px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.product__images {
+    width: 540px;
+    /*margin: 22px 110px 0;*/
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__slider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.product__image {
+    cursor: pointer;
+}
+
+.product__additional-image {
+    object-fit: cover;
+    width: 90px;
+    height: 130px;
+}
+
+.product__additional-image:not(:first-child){
+    margin-top: 30px;
+}
+
+.product__main-image {
+    object-fit: cover;
+    width: 340px;
+    height: 492px;
+}
+
+.product__arrow-next {
+    margin-top: 30px;
+    width: 40px;
+    height: 29px;
+    align-self: center;
+    background-color: #fff;
+    outline: 1px solid #DEDEDE;
+    border: none;
+    cursor: pointer;
+}
+
+.product__info {
+    margin-top: 70px;
+    margin-left: 110px;
+}
+
+.product__title {
+    font-family: "Circe", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.product__categories {
+    margin-top: 8px;
+    width: 340px;
+    display: flex;
+}
+
+.product__link {
+    text-decoration: none;
+    color: #006be5;
+}
+
+.product__link:not(:first-of-type){
+    margin-left: 10px;
+}
+
+.product__prices {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    font-size: 1.125rem;
+    margin-top: 46px;
+}
+
+.product__price{
+    font-family: "Circe", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.product__price--old {
+    color: #c3c2c2;
+    text-decoration: none;
+    outline: none;
+}
+
+.product__price--old::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    background: #c3c2c2;
+    transform: translate(0, 14px);
+    position: absolute;
+}
+.product__space{
+    margin-left: 35px;
+}
+
+.product__price--new-irrelevant {
+    margin-left: 10px;
+    color: #9a9b9b;
+}
+
+.product__promocode{
+    margin-left: 7px;
+    font-size: 0.938rem;
+}
+
+.product__avilable {
+    width: 339px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 11px 22px;
+    background-color: #f4f4f4;
+}
+
+.product__avilable-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.product__avilable-icon {
+    width: 17px;
+    height: 13px;
+}
+
+.product__avilable-label{
+    margin-left: 12px;
+}
+
+.product__counter {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.product__amount-button {
+    width: 22px;
+    height: 25px;
+    line-height: 25px;
+    border: none;
+    outline: 1px solid #c3c2c2;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.product__amount-button--minus {
+    color: #c3c2c2;
+}
+
+.product__amount {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    background-color: #efefef;
+    border: none;
+    outline: 1px solid #c3c2c2;
+}
+
+.product__amount::-webkit-inner-spin-button, 
+.product__amount::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.product__actions {
+    margin-top: 20px;
+}
+
+.product__button {
+    height: 40px;
+    min-width: 236px;
+    padding: 0 15px;
+    line-height: 40px;
+    border: 2px solid #d9d9d9;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-family: "Circe", sans-serif;
+    font-weight: 600;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.product__button:not(:first-child) {
+    margin-left: 20px;
+}
+
+.product__button--hilighted {
+    background-color: #006be5;
+    border: 3px solid #006be5;
+    color: #fff;
+}
+
+.product__description {
+    margin-top: 38px;
+    width: 455px;
+    line-height: 18px;
+}
+
+.product__social {
+    margin-top: 35px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.product__social-link {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.product__social-link:first-child {
+    margin-left: 24px;
+}
+
+.product__social-counter {
+    position:relative;
+    padding: 0 10px;
+    height: 30px;
+    margin-left: 18px;
+    background-color: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product__social-counter::before {
+    position: absolute;
+    content: "";
+    border-style: solid;
+    border-width: 4.5px 5px 4.5px 0;
+    border-color: transparent #efefef transparent transparent;
+    left: -5px;
+}
+
+.product__alert {
+    font-family: "Circe", sans-serif;
+    font-weight: 300;
+}
