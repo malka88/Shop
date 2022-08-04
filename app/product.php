@@ -33,9 +33,9 @@
         $pictures = $query2->fetchAll();
         $categories = $query3->fetchAll();
         if(!$product || !$pictures || !$categories) {
-            header('Location: http://localhost/shop/public/404.php');
+            header('Location: /shop/public/common.blocks/404.php');
         }
 
     } catch (PDOException $e) {
-        header('Location: http://localhost/shop/public/404.php');
+        header('Location: /shop/public/common.blocks/404.php');
     }

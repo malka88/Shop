@@ -50,11 +50,10 @@
         $products = $query2->fetchAll();
 
         if(!$count || !$category || !$products) {
-            header('Location: http://localhost/shop/public/404.php');
+            header('Location: /shop/public/common.blocks/404.php');
         }
 
     } catch (PDOException $e) {
-        echo "selkgul";
-        header('Location: http://localhost/shop/public/404.php');
+        header('Location: /shop/public/common.blocks/404.php');
         exit;
     }

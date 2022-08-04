@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8"/>
         <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="main.css"/>
+        <link rel="stylesheet" type="text/css" href="../assets/css/main.css"/>
 
         <title>404</title>
     </head>
